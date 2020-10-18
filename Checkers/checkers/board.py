@@ -15,6 +15,9 @@ class Board:
             for col in range(row%2,ROWS,2):
                 pygame.draw.rect(win,RED,(row*SQUARE_SIZE,col*SQUARE_SIZE,SQUARE_SIZE,SQUARE_SIZE))
 
+    def get_piece(self,row,col):
+        return self.board[row][col]
+
     def create_board(self):
         for row in range(ROWS):
             self.board.append([])
@@ -37,3 +40,14 @@ class Board:
                 piece=self.board[row][col]
                 if piece!=0:
                     piece.draw(win)
+
+    def move(self,piece,row,col):
+        self.board[piece.row][piece.col],self.board[row][col]=self.board[row][col],self.board[piece.row][piece.col]
+        piece.move(row,col)
+
+        if row==ROWS or row==0:
+            piece.make_king()
+            if piece.color==WHITE:
+                self.white_kings+=1
+            else:
+                self.red_kings+=1
