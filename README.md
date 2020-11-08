@@ -95,7 +95,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * **Django Documentation** - *Documentation* - [Documentation](https://github.com/FalseG0d)
-* **Inspiration** - *Inspiration* - [Inspiration](https://simpleisbetterthancomplex.com/)
+* **Inspiration** - *Inspiration* - [Inspiration](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
